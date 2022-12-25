@@ -1,0 +1,87 @@
+insert into customer_entity (active, contact, delivery_adress, nom) values (1,'54230376','mannouba', 'Amyr');
+
+
+select * from customer_entity;
+
+insert into customer_entity (active, contact, delivery_adress, nom) values (0,'54230376','danden', 'mohamed');
+insert into customer_entity (active, contact, delivery_adress, nom) values (1,'45454545','ghazela', 'yossra');
+insert into customer_entity (active, contact, delivery_adress, nom) values (0,'45454545','bardo', 'ali');
+insert into customer_entity (active, contact, delivery_adress, nom) values (1,'55555555','tunis', 'hamid');
+insert into customer_entity (active, contact, delivery_adress, nom) values (0,'44444444','sidi bou said', 'manelle');
+insert into customer_entity (active, contact, delivery_adress, nom) values (1,'22111212','ariana', 'ghassen');
+
+
+insert into order_entity (create_date, order_status, customer_id) values (now(), 1,1);
+
+insert into order_entity (create_date, order_status, customer_id) values ('2021-12-17', 3, 1);
+insert into order_entity (create_date, order_status, customer_id) values ('2021-12-18', 3, 2);
+insert into order_entity (create_date, order_status, customer_id) values ('2021-12-05', 3, 2);
+insert into order_entity (create_date, order_status, customer_id) values ('2021-12-16', 3, 1);
+insert into order_entity (create_date, order_status, customer_id) values ('2021-12-10', 3, 3);
+insert into order_entity (create_date, order_status, customer_id) values ('2021-12-20', 3, 4);
+insert into order_entity (create_date, order_status, customer_id) values ('2021-12-21', 3, 5);
+insert into order_entity (create_date, order_status, customer_id) values ('2021-12-22', 3, 7);
+insert into order_entity (create_date, order_status, customer_id) values ('2021-12-23', 1, 1);
+insert into order_entity (create_date, order_status, customer_id) values ('2021-12-22', 1, 2);
+insert into order_entity (create_date, order_status, customer_id) values ('2021-12-25', 2, 4);
+insert into order_entity (create_date, order_status, customer_id) values ('2021-12-19', 2, 5);
+insert into order_entity (create_date, order_status, customer_id) values ('2021-12-26', 0, 1);
+
+select * from order_entity;
+
+
+insert into item_entity (description, price, weight) VALUES ('phone',459.9,250);
+insert into item_entity (description, price, weight) VALUES ('machine',750,20250);
+insert into item_entity (description, price, weight) VALUES ('pc',4599,2150);
+insert into item_entity (description, price, weight) VALUES ('lamp',20,1000);
+insert into item_entity (description, price, weight) VALUES ('watch',59,560);
+insert into item_entity (description, price, weight) VALUES ('ecran',439,2500);
+insert into item_entity (description, price, weight) VALUES ('ring light',69,890);
+insert into item_entity (description, price, weight) VALUES ('tripod',119,5469.36);
+insert into item_entity (description, price, weight) VALUES ('harry potter books collections',80,965);
+insert into item_entity (description, price, weight) VALUES ('bicycle',780,7652);
+
+select * from item_entity;
+
+
+
+insert into order_detail_entity (qty, tax, item_id, order_id) VALUES (2, 19, 6, 1);
+
+insert into order_detail_entity (qty, tax, item_id, order_id) VALUES (2, 19, 6, 1);
+insert into order_detail_entity (qty, tax, item_id, order_id) VALUES (1, 19, 1, 1);
+insert into order_detail_entity (qty, tax, item_id, order_id) VALUES (1, 19, 2, 2);
+insert into order_detail_entity (qty, tax, item_id, order_id) VALUES (2, 19, 4, 2);
+insert into order_detail_entity (qty, tax, item_id, order_id) VALUES (1, 19, 3, 1);
+insert into order_detail_entity (qty, tax, item_id, order_id) VALUES (1, 19, 5, 3);
+insert into order_detail_entity (qty, tax, item_id, order_id) VALUES (2, 19, 6, 4);
+insert into order_detail_entity (qty, tax, item_id, order_id) VALUES (3, 19, 8, 5);
+insert into order_detail_entity (qty, tax, item_id, order_id) VALUES (4, 19, 7, 7);
+insert into order_detail_entity (qty, tax, item_id, order_id) VALUES (4, 19, 6, 1);
+insert into order_detail_entity (qty, tax, item_id, order_id) VALUES (1, 19, 9, 2);
+insert into order_detail_entity (qty, tax, item_id, order_id) VALUES (1, 19, 10, 4);
+insert into order_detail_entity (qty, tax, item_id, order_id) VALUES (2, 19, 5, 5);
+insert into order_detail_entity (qty, tax, item_id, order_id) VALUES (1, 19, 4, 1);
+
+
+select * from order_detail_entity;
+
+
+insert into delivery_entity (delivery_date, delivery_man, shopping_date, order_id) VALUES ('2021-12-30','med ali','2021-12-29',1);
+insert into delivery_entity (delivery_date, delivery_man, shopping_date, order_id) VALUES ('2021-12-30','mohammed','2021-12-29',2);
+insert into delivery_entity (delivery_date, delivery_man, shopping_date, order_id) VALUES ('2021-12-19','med ali','2021-12-17',3);
+insert into delivery_entity (delivery_date, delivery_man, shopping_date, order_id) VALUES ('2021-12-20','mohammed','2021-12-19',4);
+insert into delivery_entity (delivery_date, delivery_man, shopping_date, order_id) VALUES ('2021-12-10','ghassen','2021-12-05',5);
+insert into delivery_entity (delivery_date, delivery_man, shopping_date, order_id) VALUES ('2021-12-17','med ali','2021-12-16',6);
+insert into delivery_entity (delivery_date, delivery_man, shopping_date, order_id) VALUES ('2021-12-15','ghassen','2021-12-10',7);
+insert into delivery_entity (delivery_date, delivery_man, shopping_date, order_id) VALUES ('2021-12-23','mohammed','2021-12-20',8);
+insert into delivery_entity (delivery_date, delivery_man, shopping_date, order_id) VALUES ('2021-12-23','moncef','2021-12-21',9);
+insert into delivery_entity (delivery_date, delivery_man, shopping_date, order_id) VALUES ('2021-12-25','moncef','2021-12-22',10);
+insert into delivery_entity (delivery_date, delivery_man, shopping_date, order_id) VALUES ('2021-12-26','moncef','2021-12-23',11);
+insert into delivery_entity (delivery_date, delivery_man, shopping_date, order_id) VALUES ('2021-12-24','ghassen','2021-12-22',12);
+insert into delivery_entity (delivery_date, delivery_man, shopping_date, order_id) VALUES ('2021-12-27','ghassen','2021-12-25',13);
+insert into delivery_entity (delivery_date, delivery_man, shopping_date, order_id) VALUES ('2021-12-21','med ali','2021-12-19',14);
+insert into delivery_entity (delivery_date, delivery_man, shopping_date, order_id) VALUES ('2021-12-29','mohammed','2021-12-26',15);
+
+
+
+select * from delivery_entity;
